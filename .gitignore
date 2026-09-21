@@ -1,0 +1,26 @@
+# --- Secrets ---
+.env
+*.env
+!.env.example
+
+# --- Python (backend) ---
+backend/venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+backend/chroma_db/
+
+# --- Uploaded user files (runtime data, not source) ---
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# --- Node (frontend) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# --- OS / editor cruft ---
+.DS_Store
+__MACOSX/
+.vscode/
+.idea/
